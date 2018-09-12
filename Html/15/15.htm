@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ASGMT 15 | HTML - Forms</title>
+		<style type="text/css">
+			.h11{
+				color: #566573 ;
+				background-color: white;
+				text-align: right;
+				font-size: 15px;
+				padding: 6px;
+			}
+			.h1{color: #566573 ;
+				background-color: white;
+				padding: 6px;
+
+			}
+			.step{
+				color:  #2980b9 ;
+				font-size: 20px; 
+				font-style: bold;
+			}
+			th{
+				text-align: left;
+			}
+			input[type=text],[type=email]
+			{
+				width: 300px;
+				height: 20px;
+
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<table bgcolor=" #a0d9ff"  cellpadding="5" cellspacing="5">
+				<tr>
+					<th class="step" align="left" colspan="6">STEP 1</th>
+				</tr>
+				<tr><td colspan="6">
+					<table border="0" width="100%" cellspacing="0"><tr>
+					<td  class="h1" colspan="3" align="left">PERSONAL INFORMATION</td>
+					<td  class="h11" colspan="3" align="right">All Fields are mandatory</td></tr>
+					</table>	
+
+				</tr>
+				<tr>
+					<th>First Name:</th>
+					<td colspan="2"><input type="text"></td>
+					<th>Last Name:</th>
+					<td colspan="2"><input type="text"></td>
+				</tr>
+				<tr>
+					<th>Email:</th>
+					<td colspan="2"><input type="email"></td>
+					<th>Tell Number:</th>
+					<td colspan="2"><input type="text"></td>
+				</tr>
+				<tr>
+					<th>Mobile Number:</th>
+					<td colspan="2"><input type="text"></td>
+					<th>City:</th>
+					<td colspan="2"><input type="text"></td>
+				</tr>
+				<tr>
+					<th>State:</th>
+					<td colspan="2"><input type="text"></td>
+					<th>Gender:</th>
+					<td colspan="2" class="Gender">
+						<input type="radio" name="Gender">Male
+						<input type="radio" name="Gender">Female
+					</td>
+				</tr>
+				<tr>
+					<th>Date Of Birth:</th>
+					<td colspan="2">
+						<select name="DOBDay">
+						<option>Day</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option>
+						<option value="26">26</option>
+						<option value="27">27</option>
+						<option value="28">28</option>
+						<option value="29">29</option>
+						<option value="30">30</option>
+						<option value="31">31</option>
+						</select>
+				
+						<select name="DOBMonth">
+							<option>Month:</option>
+							<option value="January">January</option>
+							<option value="Febuary">Febuary</option>
+							<option value="March">March</option>
+							<option value="April">April</option>
+							<option value="May">May</option>
+							<option value="June">June</option>
+							<option value="July">July</option>
+							<option value="August">August</option>
+							<option value="September">September</option>
+							<option value="October">October</option>
+							<option value="November">November</option>
+							<option value="December">December</option>
+							</select>
+	
+							<select name="DOBYear">
+								<option>Year</option>
+								<option value="2020">2020</option>
+								<option value="2019">2019</option>
+								<option value="2018">2018</option>
+								<option value="2017">2017</option>
+								<option value="2016">2016</option>
+								<option value="2015">2015</option>
+								<option value="2014">2014</option>
+								<option value="2013">2013</option>
+								<option value="2012">2012</option>
+								<option value="2011">2011</option>
+								<option value="2010">2010</option>
+								<option value="2009">2009</option>
+								<option value="2008">2008</option>
+								<option value="2007">2007</option>
+								<option value="2006">2006</option>
+								<option value="2005">2005</option>
+								<option value="2004">2004</option>
+								<option value="2003">2003</option>
+								<option value="2002">2002</option>
+								<option value="2001">2001</option>
+								<option value="2000">2000</option>
+								<option value="1999">1999</option>
+								<option value="1998">1998</option>
+								<option value="1997">1997</option>
+								<option value="1996">1996</option>
+								<option value="1995">1995</option>
+								</select>
+								</td>
+								<th>Emergency Contact Number:</th>
+								<td colspan="2">
+								<input type="text"></td>		
+							</tr>
+							<tr>
+							<th>Name:</th>
+							<td colspan="2"><input type="text"></td>
+							<th>Relationship:</th>
+							<td colspan="2"><input type="text"></td>
+						</tr>
+						<tr>
+							<th>Alternate Contact Number:</th>
+							<td colspan="5"><input type="text"></td>
+						</tr>
+						<tr>
+							<th class="step" align="left" colspan="6">STEP 2</th>
+						</tr>
+						<tr>
+							<th class="h1" colspan="4">OTHER DETAILS</th>
+							<th class="h11" colspan="4">All Fields are mandatory</th>
+						</tr>
+						<tr>
+							<th>Employment Details:</th>
+							<td><input type="radio" name="ed">Public Sector</td>
+							<td><input type="radio" name="ed">Student</td>
+							<td><input type="radio" name="ed">Self-Employed</td>
+							<td colspan="2"><input type="radio" name="ed">Others
+							</td>
+						</tr>
+						<tr>
+							<th>Annual Family Income:</th>
+							<td><input type="radio" name="i">50,000</td>
+							<td><input type="radio" name="i">50,000-1,00000</td>
+							<td><input type="radio" name="i">1 Lakh - 5 Lakh</td>
+							<td><input type="radio" name="i">5 Lakh - 10 Lakh</td>
+							<td><input type="radio" name="i">Above 10 Lakh</td>
+						</tr>
+				<tr>
+					<th>Education:</th>
+					<td><input type="checkbox">
+					High School</td>
+					<td><input type="checkbox" >
+					Graduate</td>
+					<td><input type="checkbox" >
+					Post Graduate</td>
+					<td><input type="checkbox" >
+					Professional</td>
+					<td><input type="checkbox" >
+					Others</td>
+				</tr>
+				<tr>
+					<th>I have</th>
+					<td><input type="checkbox" >
+					Car</td>
+					<td><input type="checkbox" >
+					Mobile Phone</td>
+					<td><input type="checkbox" >
+					Credit Card</td>
+					<td><input type="checkbox">
+					Club Membership</td>
+					<td><input type="checkbox">
+					Insurance Policy</td>
+				</tr>
+				<tr>
+					<th>Cycling Experience</th>
+					<td colspan="5"><input type="checkbox">
+					I am a Regular Cyclist   &nbsp; &nbsp; &nbsp;
+					<input type="checkbox">
+					I am a part of a cycling club</td>
+				</tr>
+				<tr>
+					<th>Name of the Cycling Club:</th>
+					<td colspan="5"><input type="text"></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
