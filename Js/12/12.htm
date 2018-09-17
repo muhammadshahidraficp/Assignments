@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASGMT 12 | JS - Variable Scope</title>
+	<script type="text/javascript">
+		document.write("<h3>Global</h3>");
+		message();
+		function message(){
+			var a="apple inside function";
+			document.write(a+"<br>");
+		
+		}
+		a="apple outside function";
+		document.write(a+"<br>");
+		document.write("<h3>Local</h3>");
+		message();
+	</script>
+</head>
+<body>
+
+</body>
+</html>

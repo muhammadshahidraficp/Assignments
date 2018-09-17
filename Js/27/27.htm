@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASGMT 27 | JS - Forms</title>
+	<script type="text/javascript">
+		function write_name(){
+			var welcome_para=document.getElementById('welcome');
+			var fname=document.getElementById('fname');
+			var lname=document.getElementById('lname');
+			var email=document.getElementById('email');
+			welcome_para.innerHTML="Welcome "+fname.value+" "+lname.value+"<br>Your email: "+email.value;
+		}
+		
+	</script>
+</head>
+<body>
+<label>First Name:</label>
+<input type="text" id="fname"><br>
+<label>Last Name:</label>
+<input type="text" id="lname"><br>
+<label>Email Id</label>
+<input type="email" id="email"><br>
+<label>Password</label>
+<input type="Password"><br>
+<input type="button" value="SignUp" onclick="write_name();">
+<p id="welcome"></p>
+</body>
+</html>

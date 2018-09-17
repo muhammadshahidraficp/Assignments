@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASGMT 15 | JS - IF statement</title>
+	<script type="text/javascript">
+		marks1= new Array(96,83,50);
+		marks2= new Array(99,93,50);
+		total1=0;
+		total2=0;
+		document.write("marks for: "+"Arun is ");
+		document.write(marks1+"<br>");
+		for(i=0;i<=2;i++)
+		{	
+			total1=total1+marks1[i];
+		}
+		document.write("Total is: "+total1);
+		document.write("<br>marks for: "+"Midhun is ");
+		document.write(marks2+"<br>");
+		for(i=0;i<=2;i++)
+		{
+		 total2=total2+marks2[i];	
+		}
+		document.write("Total is: "+total2);
+		if(total1<total2){
+		   t=total2-total1;
+		   alert("Arun has got "+t+" marks more than Midhun");
+		}
+		else{
+		   t=total1-total2;
+		   alert("Midhun has got"+t+" marks more than Arun");
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

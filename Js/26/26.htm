@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASGMT 26 | JS - Using Timers</title>
+	<script type="text/javascript">
+			var image_tracker='f';
+			function change(){
+			 	var image=document.getElementById('photo');
+			 	image.src="2.jpeg";
+			 	if(image_tracker=='f'){
+			 		
+			 		image_tracker='t';
+			 		}
+			 	else{
+			 		image.src='1.jpeg';
+			 		image_tracker='f';
+					 }
+			}
+			
+			var timer=setInterval('change()',2000);
+			//clearInterval(timer,2000);
+			//setTimeout('change()',2000);
+
+	</script>
+</head>
+<body>
+<img src="1.jpeg" id="photo" onclick="change()">
+</body>
+</html>
