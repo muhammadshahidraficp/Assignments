@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASGMT 33 | JS - Check box validation</title>
+	<style type="text/css">
+		#error{
+			color: red;
+		}
+	</style>
+	<script type="text/javascript">
+		function validate(){
+			graduate=document.getElementById("graduate").checked;
+			post=document.getElementById("post").checked;
+			if(!(graduate || post)){
+				document.getElementById("error").innerHTML="Please choose your Qualification";
+			}
+
+			// else if(!post){
+			// 	document.getElementById("error").innerHTML="Please choose your Qualification";
+			// }
+			else{
+			document.getElementById("error").innerHTML="";
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<form>
+		<table bgcolor="#00FFFF">
+			<tr>
+				<td align="center" colspan="2"><b>Check Box Validation</b></td>
+			</tr>
+			<tr>
+				<th>Qualification</th>
+				<td>
+					<label>Graduate</label>
+					<input type="checkbox" name="gender" value="male" id="graduate">
+					<label>Post-Graduate</label>
+					<input type="checkbox" name="gender" value="female" id="post">
+				</td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2"><label id="error"></label></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="button" value="Submit" onclick="validate()">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

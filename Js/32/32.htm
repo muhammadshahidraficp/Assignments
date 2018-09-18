@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASGMT 32 | JS - Radio Button</title>
+	<style type="text/css">
+		#error{
+			color: red;
+		}
+	</style>
+	<script type="text/javascript">
+		function validate(){
+			male=document.getElementById("male").checked;
+			female=document.getElementById("female").checked;
+			if(!(male||female)){
+				document.getElementById("error").innerHTML="Please select gender";
+			}
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<table bgcolor="#00FFFF">
+			<tr>
+				<td align="center" colspan="2"><b>Radio Button Validation</b></td>
+			</tr>
+			<tr>
+				<th>Gender</th>
+				<td>
+					<label>Male</label>
+					<input type="radio" name="gender" value="male" id="male">
+					<label>Female</label>
+					<input type="radio" name="gender" value="female" id="female">
+				</td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2"><label id="error"></label></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="button" value="Submit" onclick="validate()">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

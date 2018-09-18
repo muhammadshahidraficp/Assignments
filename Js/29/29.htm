@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASGMT 29 | JS - Form Submission</title>
+	<script type="text/javascript">
+		function login(){
+			username="admin";
+			password="admin123";
+			var user= document.getElementById("username").value;
+			var pwd=document.getElementById("password").value;
+			if((user==username)&&(pwd==password))
+			{
+				document.write("Login Successfull");
+			}
+			else{
+			document.getElementById("msg").innerHTML = "Something wrong!";
+
+			}
+		}
+	</script>
+</head>
+<body>
+	<form>
+		username:<input type="text" id="username"/>
+		password:<input type="password" id="password"/>
+		<input type="button" value="LOGIN" onclick="login()">
+		<br><label id="msg" style="color: red;"></label>		
+	</form>
+</body>
+</html>

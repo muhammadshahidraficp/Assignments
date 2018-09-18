@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASGMT 30 | JS - Validations</title>
+	<style type="text/css">
+		#ne,#pe,#ce,#ee,#me,#pae{
+			color: red;
+		}
+		th{
+			text-align: left;
+		}
+	</style>
+	<script type="text/javascript">
+		function register(){
+			var name=document.getElementById("name").value;
+			var personal=document.getElementById("personal").value;
+			var email=document.getElementById("email").value;
+			var mobile=document.getElementById("mobile").value;
+			var password=document.getElementById("password").value;
+			if(name==""){
+				document.getElementById('ne').innerHTML=" Please Enter Name :)";
+			}
+			if(personal==""){
+				document.getElementById('pe').innerHTML=" Please Enter Personal Addresss :)";
+			}
+			if(email==""){
+				document.getElementById('ee').innerHTML=" Please Enter Email :)";
+			}
+			if(mobile==""){
+				document.getElementById('me').innerHTML=" Please Enter Mobile Number:)";
+			}
+			if(password==""){
+				document.getElementById('pae').innerHTML=" Please Enter Password :)";
+			}
+			if(password==""){
+				document.getElementById('ce').innerHTML=" Please Re-enter Password :)";
+			}
+		}
+		
+	</script>
+</head>
+<body>
+	<form>
+		<table bgcolor="#00FFFF">
+			<tr>
+				<td colspan="2" align="center"><b>Student Registration Form</b></td>
+			</tr>
+			<tr>
+				<th>Name</th>
+				<td><input type="text" id="name"><label id="ne"></label></td>
+			</tr>
+			<tr>
+				<th>Personal Address</th>
+				<td><input type="text" id="personal"><label id="pe"></label></td>
+			</tr>
+			<tr>
+				<th>Email Id</th>
+				<td><input type="email" id="email"><label id="ee"></label></td>
+			</tr>
+			<tr>
+				<th>Mobile No</th>
+				<td><input type="text" id="mobile"><label id="me"></label></td>
+			</tr>
+			<tr>
+				<th>Password</th>
+				<td><input type="text" id="password"><label id="pae"></label></td>
+			</tr>
+			<tr>
+				<th>Confirm Password</th>
+				<td><input type="text" id="personal"><label id="ce"></label></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="button" value="Submit Form" onclick="register()"></td>
+			</tr>
+		</table>
+	</form>	
+</body>
+</html>
