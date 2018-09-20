@@ -1,79 +1,219 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>19</title>
-	<style type="text/css">
-		*{
-			padding: 0px;
-			margin: 0px;
-		}
-		ul{	
-			list-style: none;
+    <head>
+        <link rel="stylesheet" href="artifice.css">
+        <style type="text/css">
+        	.name{
+        		font-size: 32px;
+        		margin-left: 15px;
+        	}
+        	li{
+        		font-weight: bold;
+        	}
+        	
 
-		}
-		
-		a{
-			text-decoration: none;
-			color: white;
-		}
-		.head{
-			color: white;
-			font-family: cursive;
-			padding-left: 30px;
-			display: inline-block;
-			font-size: 30px;
-			margin-left: 80px;
-			
-		}
-		.top_nav ul li{
-			float: left;
-			padding-right: 10px;
-			margin-right: 10px;
-			font-size: 15px;
-			padding-top: 10px;
-		}
-		.top_nav{
-			float: right;
-			padding-right: 100px;
-			padding-top: 30px;
-		}
-		section{
-			display:inline-block;
-			width: 380px;
-			padding: 50px;
-			margin: 40px;
-		}
-	</style>
-</head>
-<body bgcolor="#000000">
-	<header>
-		<h2 class="head" style="vertical-align: 25px"><b>ARTIFICE</b></h2>
-	<nav class="top_nav">
-		<ul>
-			<li><b><a href="#">HOMEPAGE</a></b></li>
-			<li><b><a href="#">BLOG </a></b></li>
-			<li><b><a href="#">PHOTOS </a></b></li>
-			<li><b><a href="#">ABOUT </a></b></li>
-			<li><b><a href="#">CONTACT</a></b></li>			
-		</ul>
-	</nav>		
-	</header>
 
-	<div align="center">
-		<img src="pic1.jpg" style="padding: 50px;">
-	</div>
-	<table>
-		<tr>
-	<td><section>
-		<span style="font-size: 20px; color: white; padding: 20px;"><b>WELCOME TO ARTIFICE</b></span>
-		<article style="color: white; font-size:13px; padding: 20px;"><br>This is Artifice, a free fully standards-compliant CSS template by TEMPLATED. The images used inthis template are from PDPhoto. This free template is released under the Creative Common Attribution license, so you're pretty much free to do whatever you want with it(evenuse it commercially) provided you give us credit for it.. Have fun :) 
-		</article>
-	</section></td>
-	<td><section>
-		<h4 style="color: white">FRINGILLA PHARETRA QUIS</h4>
-	</section>
-	</td>
-	</tr>
-</table>
-</body>
+
+
+
+
+
+
+  
+  h2{
+  	font-size: 18px;
+  }
+  
+  
+  
+	a{
+		text-decoration: none;
+		color: white;
+	}
+  
+hr{
+    border: dashed 1px ;
+}
+.pp{
+    float: left;
+    width: 100px;
+    padding-left: 15px;
+    font-size: 10px;
+    line-height: 20px;
+    
+}
+
+.left-l{
+    float: left;
+    width: 200px;
+}
+.left-r{
+    float: left;
+    
+
+}
+.nav_bar{
+	font-size: 15px;
+}
+p{
+	font-size: 12px;
+	line-height: 20px;
+}
+#heading{
+	font-size: 15px;
+	font-weight: bold;
+	
+
+}
+
+.head1{
+	line-height: 30px;
+}
+*{
+    
+    
+    list-style-type: none;
+}
+.container{
+    width: 1200px;
+    
+    margin:0px auto;
+    background-color: black;
+    color: white;
+}
+
+
+
+.main-nav{
+    background-color:black;
+    color: white;
+
+}
+.nav{
+    
+    list-style-type: none;
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+.name {
+   
+    width: 60%;
+    margin-right: auto;
+    color: white;
+  }
+.nav li {
+    display: inline-block;
+    padding: 5px 10px 10px 10px;
+    list-style-position: inside;
+    
+  }
+  .pc1{
+      margin: 10px auto;
+
+  }
+  .pic2
+  {
+    float: left;
+    width: 60px;
+    height: 60px;
+  }
+  .d2 {
+    margin: 10px;
+    padding: 20px 40px 40px;
+    width: 400px;
+   
+    text-align: left;
+   
+   
+  }
+  .sm {
+    display: flex;
+    width: 1200px;
+    
+    margin: 0 auto;
+}
+hr{
+    border: dashed 1px ;
+}
+.pp{
+    float: left;
+    width: 100px;
+    
+}
+
+.left-l{
+    float: left;
+    width: 200px;
+}
+.left-r{
+    float: left;
+    width: 10px;
+
+}
+     
+
+
+ </style>
+    </head>
+    <body bgcolor="#808080">
+        <div class="container">
+        <DIV class="main-nav">
+                 <ul class="nav">
+                    <li class="name">ARTIFICE</li>
+                    <li class="nav_bar">HOMEPAGE</li>
+                    <li class="nav_bar">BLOG</li>
+                    <li class="nav_bar">PHOTOS</li>
+                    <li class="nav_bar">ABOUT</li>
+                    <li class="nav_bar">CONTACT</li>
+
+                </ul>
+        
+            </div>
+            <header>
+                <img src="pic1.jpg" class="pc1">
+            </header>
+       <section class="sm">
+           <div class="d2">
+               <h2>	WELCOME TO ARTIFICE</h2>
+               <p>This is <b>Artifice,</b> a free, fully standards-compliant CSS template by <b><u>TEMPLATED.</u></b>This images used in this template are from <u><b>PDPhoto.</b></u>This free template is released under the <b><u>Creative Common Attribution</u></b> license, so you're pretty much free to do whatever you want with it(even use it connectively) provided you give us credit for it.. Have fun :)  </p>
+              
+              <div class="left-l">
+               <h2>SUSCIPIT SED PELLENTESQUE NASCETUR</h2>
+               <img src="pic2.jpg" class="pic2" style="padding-top: 15px;">
+               <span class="pp" style="padding-top: 10px;">Lacinia natoque faucibus fringilla egestas.</span>
+               </div>
+               <div class="clear"></div>
+               <div class="left-r">
+               <span id="heading">PENATIBUS AMET SED CONSEQUAT ACCUMSAN</span>
+               <img src="pic4.jpg" style="width:150px; padding-top: 20px;" >
+               </div>
+           </div>
+           <div class="d2">
+                <h2>FRINGILLA PHARETRA QUIS</h2>
+                <p>phesullus condimentum quis nec suscipit wel phasellus rutrum. tincident posuere eu integer risus magna lorem ipsum veroreros</p>
+                <h3>VOLUTPAT CONDIMENTUM AUCTOR DOLORE</h3>
+                <p>sapien ullamcorper mus penatibus viverra curae erat consectetur. Scelerisque eleifend quis ullamcorper ante laoreet scelerisque.</p>
+                <b><a href="#" class="head1">Quis pellentesque and cras</a></b>
+                <hr>
+                <b><a href="#" class="head1"><u>Fringilla laoreet ultrices rhonocus</u></a></b>
+                <hr>
+                
+           </div>
+           <div class="d2">
+                <h2>VOLUTPAT CONDIMENTUM AUCTOR MAGNA</h2>
+                <p>rhonocus et dui dignissim elementum.vivamus lorem eu nisi phasellus lorem dolore</p>
+                <u><b><a href="#" class="head1">Mollis ermare arcu suscipit</a></u></b>
+                <hr>
+                <u><b><a href="#" class="head1">Accumsan quam arte</a></u></b>
+                <hr>
+                <u><b><a href="#" class="head1">Volutpet odio neque posuere</a></u></b>
+                <hr>
+                <u><b><a href="#" class="head1">Volutpet urna tristique quisque</a></u></b><br><br><br>
+                <b style="font-size: 20px;">CUBILIA TURPIS</b><br><br>
+                <a href="#"><u>Libero duis ultrices</u></a>
+                
+           </div>
+       </section>
+        
+        </div>
+    </body>
 </html>
