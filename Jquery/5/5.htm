@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASGMNT5 |JQUERY-CHAINING</title>
+	<scriptsrc="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#btn').click(function(){
+				$('#market').delay(500).slideDown().delay(500).slideUp();
+			});
+		});
+	</script>
+	<style type="text/css">
+		#btn{
+			height: 30px;
+			width: 120px;
+		}
+	</style>
+</head>
+<body>
+<p id=market>A marketing plan may be part of an overall business plan. Solid marketing strategy is the foundation of a well-written marketing plan.</p>
+<button id="btn">Click Me</button>
+</body>
+</html>
