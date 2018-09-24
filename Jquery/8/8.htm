@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASGMNT8 |JQUERY-CSS</title>
+	<script  src="jquery-3.3.1.js"></script>
+	<style type="text/css">
+		#p1{
+		background-color: red;
+			width: 250px;
+		}
+		#p2{
+			background-color: green;
+			width: 250px;
+		}
+		#p3{
+			background-color: violet;
+			width: 250px;
+		}
+		#p4{
+			width: 250px;
+		}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+		$('#btn').click(function(){
+				$('#p1,#p2,#p3,#p4').css('background-color','yellow');
+				
+			});
+	});
+	</script>
+</head>
+<body>
+<h4 id="h">This is a heading</h4>
+<p id="p1">This is a paragraph</p>
+<p id="p2">This is a paragraph</p>
+<p id="p3">This is a paragraph</p>
+<p id="p4">This is a paragraph</p>
+<button id="btn">Set multiple styles for p</button>
+</body>
+</html>
