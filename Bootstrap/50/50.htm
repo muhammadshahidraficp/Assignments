@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  		<title>ASGMT 50 | Bootstrap - Affix</title>
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <style type="text/css">
+        body{
+          position: relative;
+          
+        }
+        .container{
+          margin-top: 20px;
+        }
+      </style>
+  </head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-3">
+					<nav id="mainNavbar">
+			            <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="200">
+			              <li class="active"><a href="#divHome">Home</a></li>
+			              <li><a href="#divContact">Contact</a></li>
+			              <li><a href="#divAbout">About</a></li>
+			              <li><a href="#divProducts">Products</a></li>
+			            </ul>
+			        </nav>
+				</div>
+				<div class="col-xs-9">
+					   <div class="container">
+            <div id="divHome">
+              <h1>Home</h1>
+              <img src="images/1.jpeg" class="img-responsive">
+            </div>
+            <div id="divContact">
+              <h1>Contact</h1>
+              <img src="images/2.jpeg" class="img-responsive">
+            </div>
+            <div id="divAbout">
+              <h1>About</h1>
+              <img src="images/1.jpeg" class="img-responsive">
+            </div>
+            <div id="divProducts">
+              <h1>Products</h1>
+              <img src="images/2.jpeg" class="img-responsive">
+            </div>          
+        </div>
+      </div>
+				</div>
+			</div>
+		</div>
+        
+        
+    </div>
+    <script type="text/javascript">
+      $(function(){
+          $('body').scrollspy({
+              target:'#mainNavbar',offset:10
+          });
+      });
+    </script>     	               
+	</body>
+</html>

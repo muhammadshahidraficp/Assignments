@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  		<title>ASGMT 23 | Bootstrap-Form validation States</title>
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  		<style type="text/css">
+    		.container{
+      			margin-top: 10px;
+      			margin-bottom: 10px;
+    		}
+  		</style>
+	</head>
+	<body>
+      <div class="container">
+          <div class="row">
+          		 <form class="form-horizontal">
+    					<div class="form-group has-success has-feedback">
+        						<label class="col-xs-2 control-label" for="txtStrongPassword">Password</label>
+        						<div class="col-xs-10">
+            							<div class="input-group">
+                							<span class="input-group-addon">#</span>
+                							<input type="text" id="txtIncome" class="form-control"placeholder="Your Password">
+            							</div>
+            							<span class="glyphicon glyphicon-ok form-control-feedback"></span>
+           								<span class="help-block">Strong Password</span>
+        						</div>
+    					</div>
+    					<div class="form-group has-warning has-feedback">
+        						<label class="col-xs-2 control-label" for="txtStrongPassword">Password</label>
+        						<div class="col-xs-10">
+            							<div class="input-group">
+							                <span class="input-group-addon">#</span>
+							                <input type="text" id="txtIncome" class="form-control"
+							                        placeholder="Your Password">
+            							</div>
+            							<span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+            							<span class="help-block">Weak Password</span>
+        						</div>
+    						</div>
+   							<div class="form-group has-error has-feedback">
+        						<label class="col-xs-2 control-label" for="txtAge">Age</label>
+        						<div class="col-xs-10">
+            					<input type="text" id="txtAge" class="form-control"placeholder="Your Age">
+            					<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            					<span class="help-block">Invalid Age</span>
+        					</div>
+    					</div>
+					</div>
+				</form>
+			</div>
+      	</div>    
+	</body>
+</html>

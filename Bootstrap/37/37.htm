@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  		<title>ASGMT 37 | Bootstrap - Collapse Plugin</title>
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <style type="text/css">
+        .container{
+          margin-top: 20px;
+        }
+      </style>
+  </head>
+	<body>
+    <div class="container">
+      <div class="row">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+              <button class="btn btn-primary" id="toggleButton">
+                Toggle Image Gallery
+              </button>
+              <button class="btn btn-primary" id="hideButton">
+                Hide Image Gallery
+              </button>
+              <button class="btn btn-primary" id="showButton">
+                Show Image Gallery
+              </button>
+              <div class="panel-body collapse in" id="imageGallery">  
+              <div class="col-lg-4">
+                  <a href="images/1.jpeg" class="thumbnail">
+                    <p>Flower 1</p>
+                    <img src="images/1.jpeg">
+                  </a>  
+              </div>
+              <div class="col-lg-4">
+                  <a href="images/2.jpeg" class="thumbnail">
+                    <p>Flower 2</p>
+                    <img src="images/2.jpeg">
+                  </a>  
+              </div>
+              <div class="col-lg-4">
+                  <a href="images/3.jpeg" class="thumbnail">
+                    <p>Flower 3</p>
+                    <img src="images/3.jpeg">
+                  </a>  
+              </div>
+           </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <script type="text/javascript">
+        $(function(){
+          $('#toggleButton').click(function(){
+              $('#imageGallery').collapse('toggle');
+          });
+          $('#hideButton').click(function(){
+              $('#imageGallery').collapse('hide');
+          });
+          $('#showButton').click(function(){
+              $('#imageGallery').collapse('show');
+          });
+        });
+      </script>    
+	</body>
+</html>

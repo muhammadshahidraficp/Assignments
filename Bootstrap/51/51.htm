@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  		<title>ASGMT 51 | Bootstrap - Image Carousel</title>
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <style type="text/css">
+        .container{
+          margin-top: 20px;
+        }
+      </style>
+  </head>
+	<body>
+		<div class="container">
+			<div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div id="imageCarousel" class="carousel slide">
+              <ol class="carousel-indicators">
+                <li data-target="#imageCarousel" data-slide-to="0"></li>
+                <li data-target="#imageCarousel" data-slide-to="1"></li>
+                <li data-target="#imageCarousel" data-slide-to="2"></li>
+                <li data-target="#imageCarousel" data-slide-to="3"></li>
+                <li data-target="#imageCarousel" data-slide-to="4"></li>
+              </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="images/1.jpeg" class="img-responsive">
+                <div class="carousel-caption">
+                  <h3>Speed</h3>
+                  <p>Ultimate speed</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/2.jpeg" class="img-responsive">
+                <div class="carousel-caption">
+                  <h3>Free</h3>
+                  <p>Absolutely Free</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/3.jpeg" class="img-responsive">
+                <div class="carousel-caption">
+                  <h3>Paid</h3>
+                  <p>Absolutely Paid</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/4.jpeg" class="img-responsive">
+                <div class="carousel-caption">
+                  <h3>Free</h3>
+                  <p>Absolutely Free</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/5.jpeg" class="img-responsive">
+                <div class="carousel-caption">
+                  <h3>Paid</h3>
+                  <p>Absolutely Paid</p>
+                </div>
+              </div>
+            </div>
+            <a href="#imageCarousel" class="carousel-control left" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#imageCarousel" class="carousel-control right" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </div>
+        </div>
+			</div>
+    </div>
+    <script type="text/javascript">
+      $(function(){
+          $('#imageCarousel').carousel();
+      });
+    </script>  	     	               
+	</body>
+</html>

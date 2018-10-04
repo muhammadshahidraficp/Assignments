@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  		<title>ASGMT 29 | Bootstrap - Breadcrumbs</title>
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <style type="text/css">
+        .breadcrumbchange > li+ li:before{
+          content: "|";
+        }
+        .breadcrumb1{
+          background-color: yellow;
+        }
+        .breadcrumb2>.active{
+          color: red;
+        }
+      </style>
+  </head>
+	<body>
+     	 <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Product</a></li>
+       </ol>
+       <br>
+       <ol class="breadcrumb breadcrumbchange">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Product</a></li>
+       </ol>
+       <br>
+       <ol class="breadcrumb breadcrumb1">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Product</a></li>
+       </ol>
+       <br>
+       <ol class="breadcrumb breadcrumb2">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li class="active">About</li>
+          <li><a href="#">Product</a></li>
+       </ol>></
+
+	</body>
+</html>

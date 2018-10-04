@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  		<title>ASGMT 38 | Bootstrap - Accordion</title>
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <style type="text/css">
+        .container{
+          margin-top: 20px;
+        }
+      </style>
+  </head>
+	<body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-7">
+          <div id="accordion" class="panel-group">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href="#panelBodyOne" data-toggle="collapse" data-parent="#accordion">Asia</a>
+                </h4>
+              </div>
+              <div id="panelBodyOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <ul>
+                    <li>India</li>
+                    <li>China</li>
+                    <li>Japan</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href="#panelBodyTwo" data-toggle="collapse" data-parent="#accordion">North-America</a>
+                </h4>
+              </div>
+              <div id="panelBodyTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <ul>
+                    <li>USA</li>
+                    <li>Canada</li>
+                    <li>Mexico</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href="#panelBodyThree" data-toggle="collapse" data-parent="#accordion">Europe</a>
+                </h4>
+              </div>
+              <div id="panelBodyThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <ul>
+                    <li>UK</li>
+                    <li>France</li>
+                    <li>Germany</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>       
+	</body>
+</html>

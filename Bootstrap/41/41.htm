@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  		<title>ASGMT 41 | Bootstrap - Methods and Events</title>
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <style type="text/css">
+        .container{
+          margin-top: 20px;
+        }
+      </style>
+  </head>
+	<body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <button id="btnShowModal" class="btn btn-primary btn-sm">Login</button>
+          <div class="modal" id="loginModal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button class="close" id="btnHideModal">&times;</button>
+                    <h4 class="modal-title">Login</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" placeholder="Login Username" id="username">
+                      </div>
+                      <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" placeholder="Login Password" id="pasword">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary">Login</button>
+                    <button class="btn btn-primary" id="btnHideModal2">Close</button>
+                  </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(function(){
+          $('#btnShowModal').click(function(){
+              $('#loginModal').modal('show');
+          });
+          $('#btnHideModal').click(function(){
+              $('#loginModal').modal('hide');
+          });
+          $('#btnHideModal2').click(function(){
+              $('#loginModal').modal('hide');
+          });
+
+      });
+    </script>           
+	</body>
+</html>

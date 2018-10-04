@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  		<title>ASGMT 46 | Bootstrap - Alerts</title>
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <style type="text/css">
+        .container{
+          margin-top: 20px;
+        }
+      </style>
+  </head>
+	<body>
+    <div class="container">
+      <div class="row">
+        <br><br>
+        <button id="btnSubmit1" class="btn btn-danger">Alert 1</button>
+        <button id="btnSubmit2" class="btn btn-info">Alert 2</button>
+        <button id="btnSubmit3" class="btn btn-success">Alert 3</button>
+        <button id="btnSubmit4" class="btn btn-default">Alert 4</button>
+        <br><br>
+        <div id="myAlert1" class="alert alert-danger collapse">
+            <a class="close" id="linkClose1">&times;</a>
+            <strong>Error!</strong> There is a problem submitting your form
+        </div>
+        <br>
+        <div id="myAlert2" class="alert alert-default collapse">
+            <a class="close" id="linkClose2">&times;</a>
+            <strong>Error!</strong> There is a problem submitting your form
+        </div>
+        <br>
+        <div id="myAlert3" class="alert alert-info collapse">
+            <a class="close" id="linkClose3">&times;</a>
+            <strong>Error!</strong> There is a problem submitting your form
+        </div>
+        <br>
+        <div id="myAlert4" class="alert alert-success collapse">
+            <a class="close" id="linkClose4">&times;</a>
+            <strong>Error!</strong> There is a problem submitting your form
+        </div>
+      </div>
+    </div> 
+    <script type="text/javascript">
+      $(function(){
+          $('#btnSubmit1').click(function(){
+              $('#myAlert1').show('fade');
+              setTimeout(function(){
+                  $('#myAlert1').hide('fade');
+                },1000000);
+          });
+          $('#linkClose1').click(function(){
+              $('#myAlert1').hide('fade');
+          });
+
+
+          $('#btnSubmit2').click(function(){
+              $('#myAlert2').show('fade');
+              setTimeout(function(){
+                  $('#myAlert2').hide('fade');
+                },1000000);
+          });
+          $('#linkClose2').click(function(){
+              $('#myAlert2').hide('fade');
+          });
+
+          $('#btnSubmit3').click(function(){
+              $('#myAlert3').show('fade');
+              setTimeout(function(){
+                  $('#myAlert3').hide('fade');
+                },1000000);
+          });
+          $('#linkClose3').click(function(){
+              $('#myAlert3').hide('fade');
+          });
+
+          $('#btnSubmit4').click(function(){
+              $('#myAlert4').show('fade');
+              setTimeout(function(){
+                  $('#myAlert4').hide('fade');
+                },1000000);
+          });
+          $('#linkClose4').click(function(){
+              $('#myAlert4').hide('fade');
+          });
+      });
+    </script> 	               
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  		<title>ASGMT 45 | Bootstrap - Pop Over</title>
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <style type="text/css">
+        .container{
+          margin-top: 20px;
+        }
+      </style>
+  </head>
+	<body>
+    <div class="container">
+      <div class="row">
+        <br><br>
+      	<button class="btn btn-primary" id="btnPopover" title="Popover Title" data-toggle="popover" data-content="A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants<img src='images/1.jpg'>"data-html="true" data-placement="bottom" data-trigger="hover">Popover Example</button>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(function(){
+        $('#btnPopover').popover();
+      });
+    </script>               
+	</body>
+</html>
