@@ -14,21 +14,38 @@
 	</head>
 	<body>
       	<div class="container">
-          	<div class="row">
-          		 <form>
-          		 	<div class="form-group col-xs-3">
-          				<label>Name</label>
-          				<input type="text" placeholder="Full Name" class="form-control input-lg">
-          				<label>Gender</label>
-          				<select class="form-control input-lg">
-          					<option>Male</option>
-          					<option>Female</option>
-          				</select>
-          				<label>Email</label>
-          				<input type="email" placeholder="Email" class="form-control input-lg">	 	
-          		 	</div>
-          		 </form>
-    		</div>
+      		<form>
+          		<div class="row">
+					<div class="col-xs-3">
+						<div class="input-group input-group-lg">
+							<span class="input-group-addon">$</span>
+							<input type="text" class="form-control" placeholder="Large Size">
+							<span class="input-group-addon">.00</span>
+						</div>
+						<br>
+						<div class="input-group">
+							<span class="input-group-addon">
+								<span class="glyphicon glyphicon-envelope"></span>
+							</span>
+							<input type="text" class="form-control" placeholder="Default size">
+						</div>
+						<br>
+						<div class="input-group">
+							<span class="input-group-addon">
+								<input type="checkbox">
+							</span>
+							<input type="text" class="form-control" placeholder="Default size">
+						</div>
+						<br>
+						<div class="input-group input-group-xs">
+							<span class="input-group-addon">
+								<input type="radio">
+							</span>
+							<input type="text" class="form-control" placeholder="Small size">
+						</div>
+					</div>          		 
+    			</div>
+    		</form>
       	</div>    
 	</body>
 </html>
